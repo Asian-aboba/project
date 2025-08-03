@@ -1,0 +1,280 @@
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main{
+    width: 100%;
+    background-image: url("https://sdmntpritalynorth.oaiusercontent.com/files/00000000-778c-6246-9582-74658754dbcf/raw?se=2025-06-22T18%3A57%3A39Z&sp=r&sv=2024-08-04&sr=b&scid=282a6bc6-298b-5b56-b343-dd11c96a3547&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-22T09%3A18%3A36Z&ske=2025-06-23T09%3A18%3A36Z&sks=b&skv=2024-08-04&sig=CvImqp3JmUwVGiLR7BjwQRpOzsdrwpkXCQbOGfr73%2BI%3D");
+    height: 100vh;
+}
+
+h1{
+    font-size: 35px;
+    border-bottom: 2px solid aqua;
+}
+
+.window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reg-window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 520px;
+    height: 650px;
+    border-radius: 50px;
+    border:2px solid aqua;
+    background-color: transparent;
+    gap:5px;
+    backdrop-filter: blur(2px);
+}
+
+span{
+    color: transparent;
+}
+
+.spane-2{
+    font-size: 25px;
+    color:black;
+    position: relative;
+    top:30px;
+}
+
+
+
+.reg-window:hover{
+      box-shadow: 1px 1px 4px 4px aqua;
+}
+
+.input-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-name {
+   margin-right: 175px;
+   gap:15px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+input{
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 50px;
+}
+
+::placeholder{
+        color:black;
+    border-bottom: 1px solid aqua ;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    top:33px;
+}
+
+.name{
+   padding: 10px 10px;
+}
+
+.soursname{
+    padding: 10px 10px;
+}
+
+.vxid {
+    padding: 15px 130px;
+    font-size: 19px;
+    border-radius: 20px;
+    background-color: aqua;
+    color:black;
+    border: none;
+    box-shadow: 1px 1px 10px 10px aqua;
+    position: relative;
+    top:65px;
+}
+
+.register-bth{
+    color: black;
+    border: 2px solid aqua;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    padding: 4px 40px;
+    top:122px;
+}
+
+@media (max-width: 768px) {
+
+    img {
+  max-width: 100%;
+  height: auto;
+}
+  .reg-window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    border-radius: 50px;
+    border:2px solid aqua;
+    background-color: transparent;
+    gap:20px;
+    backdrop-filter: blur(2px);
+}
+
+main{
+    width: 100%;
+    background-image: url("https://sotni.ru/wp-content/uploads/2023/08/peizazh-minimalizm-10.webp");
+    height: 100vh;
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.spane-2{
+    font-size: 18px;
+    color:white;
+}
+
+
+
+.reg-window:hover{
+    box-shadow: 1px 1px 10px 10px black;
+}
+
+
+input{
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 25px;
+}
+
+::placeholder{
+        color:black;
+    border-bottom: 1px solid black ;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+button{
+    padding: 5px 25px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: black;
+    color:white;
+    border: none;
+}
+
+h1{
+    font-size: 25px;
+    color:white;
+}
+}
+
+@media (max-width: 1024px) {
+
+    img {
+  max-width: 100%;
+  height: auto;
+}
+  .reg-window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    border-radius: 50px;
+    border:2px solid black;
+    background-color: transparent;
+    gap:20px;
+    backdrop-filter: blur(2px);
+}
+
+main{
+    width: 100%;
+    background-image: url("https://sotni.ru/wp-content/uploads/2023/08/peizazh-minimalizm-10.webp");
+    height: 100vh;
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.spane-2{
+    font-size: 18px;
+    color:white;
+}
+
+
+
+.reg-window:hover{
+    box-shadow: 1px 1px 10px 10px black;
+}
+
+
+input{
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 25px;
+}
+
+::placeholder{
+        color:black;
+    border-bottom: 1px solid black ;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+button{
+    padding: 5px 25px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: black;
+    color:white;
+    border: none;
+}
+
+h1{
+    font-size: 25px;
+    color:white;
+}
+}
+
+.error-message {
+  height: 18px; /* фіксована висота — місце завжди є */
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.error-message.visible {
+  visibility: visible;
+}

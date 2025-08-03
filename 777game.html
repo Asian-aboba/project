@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="777game.css">
+    <title>777-gam.SpinWin</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxILC7Jc33S4RAVpNkjEGxS4k0kHSS-gM0w&s">
+     <div class="nav">
+        <button class="nav-bth"><a href="777game.html">Ігри</a></button>
+        <button class="nav-bth"><a href="main.html">Головне меню</a></button></button>
+        <button class="nav-bth"><a href="invest.html">Поповнення рахунку</a></button></button>
+        <button class="nav-bth"><a href="action.html">Акції</a></button></button>
+        <button class="nav-bth"><a href="drop.html">Дропи</a></button></button>
+    </div>
+    <div class="reg-log">
+        <button class="nav-bth-log"><a href="index.html">Увійти</a></button>
+        <button class="nav-bth-reg"><a href="register.html">Реєстрація</a></button>
+    </div>
+        
+      </nav>
+    </header>
+    <main>
+<div class="carousel-wrapper">
+  <div class="carousel">
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="apple"></div>
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="Google"></div>
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="Amazon"></div>
+
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="Netflix"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/trip-to-vip/1750x878_desktop_ua.webp" alt="Testla"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/webp-banner/ua/1750x878_desktop_ua%20(1).webp" alt="Nike"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/banners-new-button/amusnet/1750x878_desktop_ua%20(4).webp" alt="Addidas"></div>
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/pre-party-set-new/banner/1750x878_desktop_ua.webp" alt="Coca-Cola"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/banners-new-button/smartico/missions-neon-rave-vegas/1750_878_desktop_ua.webp" alt="apple"></div>
+
+    
+  </div>
+</div>
+
+  <!-- 🔹 Просте віконце з балансом -->
+  <div id="balance-box"> <span id="balance">0 грн</span>
+  </div>
+
+  <!-- 🔥 Модальне вікно при боргу -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>🚨 УВАГА! 🚨</h2>
+      <p>Ти в боргах більше ніж на 1000 грн!</p>
+      <button onclick="closeModal()">Закрити</button>
+    </div>
+  </div>
+
+
+
+<div class="slot-machine">
+  <h1>🎰 Слот 777 🎰</h1>
+  <div class="reels">
+    <div class="reel-column">
+      <img class="slot top" src="https://cdn-icons-png.flaticon.com/128/3521/3521726.png" alt="slot">
+      <img class="slot middle" src="https://cdn-icons-png.flaticon.com/128/11159/11159127.png" alt="slot">
+      <img class="slot bottom" src="https://cdn-icons-png.flaticon.com/128/2001/2001386.png" alt="slot">
+    </div>
+    <div class="reel-column">
+      <img class="slot top" src="https://cdn-icons-png.flaticon.com/128/3521/3521726.png" alt="slot">
+      <img class="slot middle" src="https://cdn-icons-png.flaticon.com/128/11159/11159127.png" alt="slot">
+      <img class="slot bottom" src="https://cdn-icons-png.flaticon.com/128/2001/2001386.png" alt="slot">
+    </div>
+    <div class="reel-column">
+      <img class="slot top" src="https://cdn-icons-png.flaticon.com/128/3521/3521726.png" alt="slot">
+      <img class="slot middle" src="https://cdn-icons-png.flaticon.com/128/11159/11159127.png" alt="slot">
+      <img class="slot bottom" src="https://cdn-icons-png.flaticon.com/128/2001/2001386.png" alt="slot">
+    </div>
+  </div>
+
+  <button class="spin-btn" id="spin-btn">Крутити!</button>
+  <button id="deposit-btn">Додеп</button>
+
+  <p id="result"></p>
+
+<div id="win-overlay" class="hidden">
+  🎉 ПЕРЕМОГА! ВІДАВАЙ ГРОШІ 🎉
+  <img src="https://cdn-icons-png.flaticon.com/128/7409/7409248.png">
+  <audio id="win-sound" src="перемога.mp3" preload="auto"></audio>
+</div>
+
+</div>
+
+<div id="deposit-modal">
+  <div class="modal-content">
+    <h1>Заява</h1>
+    <p>
+      Я, [ПІБ повністю], паспорт серії ___ № _______, виданий _________, проживаю за адресою:<br>
+      ________________________, цим підтверджую, що передаю своє майно (грошові кошти / облікові записи / інше майно) для внесення (додепу) у казино SpinWin.<br><br>
+      Ця передача здійснюється добровільно, без примусу та з моєї повної згоди, з метою подальшої участі у грі на платформі казино SpinWin.<br><br>
+      Дата: «_» ___________ 20 року<br>
+      Підпис: ____________________
+    </p>
+    <p>1. Предмет договору<br>
+1.1. Передавець передає, а Приймач приймає у власність майно, що складається з:<br>
+
+[перерахувати майно: гроші, рахунки, акаунти, облікові записи, ігрові права тощо]<br>
+
+1.2. Майно передається для подальшого використання у грі в казино на платформі [назва казино або платформи].<br>
+
+2. Права і обов’язки сторін
+2.1. Передавець гарантує, що має повні права на передане майно і воно не є обтяженим боргами або іншими зобов’язаннями.<br>
+
+2.2. Приймач зобов’язується використовувати отримане майно виключно для продовження гри в казино та не передавати його третім особам без письмової згоди Передавця.<br>
+
+3. Вартість майна та порядок передачі<br>
+3.1. Передача майна відбувається на безоплатній основі / за суму ___________ (необхідне підкреслити).<br>
+
+3.2. Акт прийому-передачі майна є невід’ємною частиною цього договору.<br>
+
+4. Відповідальність сторін<br>
+4.1. Сторони несуть відповідальність відповідно до чинного законодавства України за невиконання або неналежне виконання умов цього договору.<br>
+
+5. Інші умови<br>
+5.1. Усі спори, що виникають з цього договору, вирішуються шляхом переговорів, а у разі недосягнення згоди — у судовому порядку.<br>
+
+5.2. Цей договір набирає чинності з моменту підписання обома сторонами.</p>
+    <button id="close-modal">Закрити</button>
+  </div>
+</div>
+
+<div id="big-message">
+    <audio src="крикV2.mp3"></audio><img src="https://pa1.aminoapps.com/7121/5071d8c14d42533af0988000cd47a7e6d9a0f7ebr1-500-375_hq.gif"></div>
+
+
+</main>
+<script src="balance.js"></script>
+<script src="777game.js"> </script>
+</body>
+</html>

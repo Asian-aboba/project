@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Поповнення балансу</title>
+  <link rel="stylesheet" href="invest.css" />
+</head>
+<body>
+    <header>
+      <nav>
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZxILC7Jc33S4RAVpNkjEGxS4k0kHSS-gM0w&s">
+     <div class="nav">
+        <button class="nav-bth"><a href="777game.html">Ігри</a></button>
+        <button class="nav-bth"><a href="main.html">Головне меню</a></button></button>
+        <button class="nav-bth"><a href="invest.html">Поповнення рахунку</a></button></button>
+        <button class="nav-bth"><a href="action.html">Акції</a></button></button>
+        <button class="nav-bth"><a href="drop.html">Дропи</a></button></button>
+    </div>
+    <div class="reg-log">
+        <button class="nav-bth-log"><a href="index.html">Увійти</a></button>
+        <button class="nav-bth-reg"><a href="register.html">Реєстрація</a></button>
+    </div>
+        
+      </nav>
+    </header>
+    <main>
+<div class="carousel-wrapper">
+  <div class="carousel">
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="apple"></div>
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="Google"></div>
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="Amazon"></div>
+    <div class="item"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"></div>
+    <div class="item"><img src="https://logo.clearbit.com/facebook.com" alt="Facebook"></div>
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/welcome-from-the-bartender-new/banner/1750x878_desktop_ua.webp" alt="Netflix"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/trip-to-vip/1750x878_desktop_ua.webp" alt="Testla"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/webp-banner/ua/1750x878_desktop_ua%20(1).webp" alt="Nike"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/banners-new-button/amusnet/1750x878_desktop_ua%20(4).webp" alt="Addidas"></div>
+    <div class="item"><img src="https://casino.ua/minio/list-promotions/promo/pre-party-set-new/banner/1750x878_desktop_ua.webp" alt="Coca-Cola"></div>
+    <div class="item"><img src="https://casino.ua/minio/casino-team-files/promo-banners/banners-new-button/smartico/missions-neon-rave-vegas/1750_878_desktop_ua.webp" alt="apple"></div>
+    <div class="item"><img src="https://logo.clearbit.com/google.com" alt="Google"></div>
+    <div class="item"><img src="https://logo.clearbit.com/amazon.com" alt="Amazon"></div>
+    <div class="item"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"></div>
+    
+  </div>
+</div>
+  <!-- Вікно балансу зверху праворуч -->
+  <div id="balance-box">
+<span id="balance">0 грн</span>
+  </div>
+
+  <!-- Модальне вікно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>🚨 УВАГА! 🚨</h2>
+      <p>Ти в боргах більше ніж на 1000 грн!</p>
+      <button onclick="closeModal()">Закрити</button>
+    </div>
+  </div>
+
+  <!-- Основне вікно поповнення -->
+  <div class="topup-window">
+    <h2>Поповнення рахунку</h2>
+
+    <div class="input-group">
+      <label for="amount">Сума:</label>
+      <input type="number" id="amount" placeholder="Введи суму" />
+    </div>
+
+    <div class="input-group">
+      <label for="currency">Валюта:</label>
+      <select id="currency">
+        <option value="грн">Гривня (₴)</option>
+        <option value="usd">Долар ($)</option>
+        <option value="eur">Євро (€)</option>
+      </select>
+    </div>
+
+    <button onclick="topUp()">Поповнити</button>
+
+    <hr />
+
+    <h3>Історія поповнень</h3>
+<div id="history" class="history-box">
+  <p>Поки що порожньо...</p>
+</div>
+  </div>
+  
+
+  <script src="balance.js"></script>
+  <script src="invest.js"></script>
+</body>
+</html>
